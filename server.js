@@ -9,8 +9,8 @@ var dashboard = new ParseDashboard({
   "apps": [
     {
       "serverURL": "http://localhost:1337/parse",
-      "appId": "com.smlnskgmail.jaman.randomnotes",
-      "masterKey": "MASTER_KEY",
+      "appId": "",
+      "masterKey": "",
       "appName": "Random Notes"
     }
   ]
@@ -18,12 +18,12 @@ var dashboard = new ParseDashboard({
 
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
-  appId: 'com.smlnskgmail.jaman.randomnotes',
-  masterKey: 'MASTER_KEY',
+  appId: "",
+  masterKey: "",
   serverURL: 'http://localhost:1337/parse',
   clientKey: '12321',
   liveQuery: {
-    classNames: ["lists", "tasks"]
+    classNames: ["note"]
   }
 });
 
@@ -37,7 +37,7 @@ app.use('/dashboard', dashboard);
 var port = 1337;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, function () {
-  console.log('parse-server-example running on port ' + port + '.');
+  console.log('random-notes-server running on port ' + port + '.');
 });
 
 ParseServer.createLiveQueryServer(httpServer);
