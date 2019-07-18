@@ -1,6 +1,6 @@
 {
   "name": "random-notes-server",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "dependencies": {
     "express": "~4.11.x",
     "kerberos": "~0.0.x",

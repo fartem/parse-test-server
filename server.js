@@ -9,8 +9,8 @@ var dashboard = new ParseDashboard({
   "apps": [
     {
       "serverURL": "http://localhost:1337/parse",
-      "appId": "",
-      "masterKey": "",
+      "appId": "APP_ID",
+      "masterKey": "MASTER_KEY",
       "appName": "Random Notes"
     }
   ]
@@ -18,10 +18,10 @@ var dashboard = new ParseDashboard({
 
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
-  appId: "",
-  masterKey: "",
+  appId: "APP_ID",
+  masterKey: "MASTER_KEY",
   serverURL: 'http://localhost:1337/parse',
-  clientKey: '12321',
+  clientKey: 'CLIENT_KEY',
   liveQuery: {
     classNames: ["note"]
   }

@@ -1,7 +1,7 @@
 {
-  "appId": "",
-  "masterKey": "",
+  "appId": "APP_ID",
+  "masterKey": "MASTER_KEY",
   "appName": "Random Notes",
   "cloud": "./cloud/main",
-  "databaseURI": ""
+  "databaseURI": "DATABASE_URI"
 }
