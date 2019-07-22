@@ -1,21 +1,22 @@
  # parse-test-server
 
- Simple realization of Parse as server and Android as Client
+ Simple realization of Parse server with [mobile client-side](https://github.com/fartem/parse-android-test-app)
 
-# Install
+## 1. Install
 
-Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install Parse
+Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse
 
-# Run
+## 2. Parameters
 
-__Using variables:__
-- APP_ID - for application id
-- CLIENT_KEY - application client key
-- MASTER_KEY - Parse master key
-- DATABASE_URI - URI to database
+- __APP_ID:__ application id;
+- __CLIENT_KEY:__ application client key;
+- __MASTER_KEY:__ Parse master key;
+- __DATABASE_URI:__  database URI.
 
-__Run from terminal:__ `npm server start`
+## 3. Run
 
-# Dependencies
+`npm start`
+
+## 4. Dependencies
 
 In `package.json`
