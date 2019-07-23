@@ -5,3 +5,7 @@
 ## 1.0.1
 
 - Public update
+
+## 1.1.0
+
+- Moved ACL setup on server-side

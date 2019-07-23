@@ -34,6 +34,19 @@ app.use(mountPath, api);
 
 app.use('/dashboard', dashboard);
 
+Parse.Cloud.beforeSave("note", (req) => {
+  var currentUser = req.user;
+  if (currentUser != null) {
+    var note = req.object;
+    var acl = new Parse.ACL();
+    acl.setPublicReadAccess(false);
+    acl.setPublicWriteAccess(false);
+    acl.setReadAccess(currentUser, true);
+    acl.setWriteAccess(currentUser, true);
+    note.setACL(acl);
+  }
+});
+
 var port = 1337;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, function () {
