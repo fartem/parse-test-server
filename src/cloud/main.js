@@ -1,7 +1,7 @@
-Parse.Cloud.beforeSave("note", (req) => {
-  var currentUser = req.user;
+Parse.Cloud.beforeSave("note", (request) => {
+  var currentUser = request.user;
   if (currentUser != null) {
-    var note = req.object;
+    var note = request.object;
     var acl = new Parse.ACL();
     acl.setPublicReadAccess(false);
     acl.setPublicWriteAccess(false);
@@ -9,4 +9,14 @@ Parse.Cloud.beforeSave("note", (req) => {
     acl.setWriteAccess(currentUser, true);
     note.setACL(acl);
   }
+});
+
+Parse.Cloud.define("invite", (data) => {
+  var user = data.user;
+
+  var newRole = new Parse.Role("fdsdfsdf", user.getACL());
+
+  newRole.save(null, {useMasterKey: true});
+
+  return true;
 });
