@@ -9,3 +9,7 @@
 ## 1.1.0
 
 - Moved ACL setup on server-side
+
+## 1.2.0
+
+- Removed unused functions and refactored project structure

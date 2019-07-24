@@ -8,15 +8,25 @@ Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to 
 
 ## 2. Parameters
 
-- __APP_ID:__ application id;
-- __CLIENT_KEY:__ application client key;
-- __MASTER_KEY:__ Parse master key;
-- __DATABASE_URI:__  database URI.
+- APP_ID: application id;
+- CLIENT_KEY: application client key;
+- MASTER_KEY: Parse master key;
+- DATABASE_URI:  database URI.
 
-## 3. Run
+## 3. Project structure
 
-`npm start`
+### 3.1 Configuration
 
-## 4. Dependencies
+If `server.js` file
+
+### 3.2 Cloud functions
+
+In `./cloud/` folder
+
+## 4. Run
+
+From Parse folder in a terminal: `npm start`
+
+## 5. Dependencies
 
 In `package.json`
