@@ -29,13 +29,13 @@ In `./cloud/` folder
 
 | Column | Type | Description |
 | --- | --- | --- |
-| objectId | String | Default Parse column |
-| createdAt | Date | Default Parse column |
-| updatedAt | Date | Default Parse column |
-| ACL | ACL | Default Parse column |
-| title | String | note title |
-| subtitle | String | note subtitle |
-| note_id | Number | note id in local database |
+| objectId | `String` | Default Parse column |
+| createdAt | `Date` | Default Parse column |
+| updatedAt | `Date` | Default Parse column |
+| ACL | `ACL` | Default Parse column |
+| title | `String` | Note title |
+| subtitle | `String` | Note subtitle |
+| note_id | `Number` | Note id in local database |
 
 ## 5. Run
 
