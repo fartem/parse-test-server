@@ -23,10 +23,24 @@ If `server.js` file
 
 In `./cloud/` folder
 
-## 4. Run
+## 4. Database entities
+
+### 4.1 Note
+
+| Column | Type | Description |
+| --- | --- | --- |
+| objectId | String | Default Parse column |
+| createdAt | Date | Default Parse column |
+| updatedAt | Date | Default Parse column |
+| ACL | ACL | Default Parse column |
+| title | String | note title |
+| subtitle | String | note subtitle |
+| note_id | Number | note id in local database |
+
+## 5. Run
 
 From Parse folder in a terminal: `npm start`
 
-## 5. Dependencies
+## 6. Dependencies
 
 In `package.json`
