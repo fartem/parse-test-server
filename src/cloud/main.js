@@ -1,22 +1,45 @@
-Parse.Cloud.beforeSave("note", (request) => {
-  var currentUser = request.user;
-  if (currentUser != null) {
-    var note = request.object;
-    var acl = new Parse.ACL();
-    acl.setPublicReadAccess(false);
-    acl.setPublicWriteAccess(false);
-    acl.setReadAccess(currentUser, true);
-    acl.setWriteAccess(currentUser, true);
-    note.setACL(acl);
-  }
+const NoteTableName = "note";
+
+// User section
+Parse.Cloud.beforeSave(Parse.User, (request) => {
+  const user = request.object;
+
+  const userAcl = new Parse.ACL();
+  userAcl.setPublicReadAccess(false);
+  userAcl.setPublicWriteAccess(false);
+
+  user.setACL(userAcl);
 });
 
-Parse.Cloud.define("invite", (data) => {
-  var user = data.user;
+Parse.Cloud.afterSave(Parse.User, (request) => {
+  const user = request.object;
 
-  var newRole = new Parse.Role("fdsdfsdf", user.getACL());
+  const roleACL = new Parse.ACL();
+  roleACL.setPublicReadAccess(false);
+  roleACL.setPublicWriteAccess(false);
 
-  newRole.save(null, {useMasterKey: true});
+  const role = new Parse.Role(user.id + "_User", roleACL);
+  role.getUsers().add(user);
+  role.save(null, {useMasterKey: true});
+});
 
-  return true;
+// Note entity section
+Parse.Cloud.beforeSave(NoteTableName, async (request) => {
+  const roleQuery = new Parse.Query(Parse.Role).equalTo('users', request.user);
+  try {
+    const noteACL = new Parse.ACL();
+    noteACL.setPublicReadAccess(false);
+    noteACL.setPublicWriteAccess(false);
+
+    const result = await roleQuery.find({ useMasterKey: true });
+    for (var i = 0; i < result.length; i++) {
+      noteACL.setRoleReadAccess(result[i], true);
+      noteACL.setRoleWriteAccess(result[i], true);
+    }
+
+    const note = request.object;
+    note.setACL(noteACL);
+  } catch(e) {
+    console.log(e);
+  }
 });

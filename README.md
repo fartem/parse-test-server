@@ -1,29 +1,35 @@
- # parse-test-server
+# parse-test-server
 
- Simple realization of Parse server with [mobile client-side](https://github.com/fartem/parse-android-test-app)
+Simple realization of Parse server with [mobile client](https://github.com/fartem/parse-android-test-app)
 
 ## 1. Install
 
-Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse
+Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse server.
 
 ## 2. Parameters
 
-- APP_ID: application id;
-- CLIENT_KEY: application client key;
-- MASTER_KEY: Parse master key;
-- DATABASE_URI:  database URI.
+__Values for working with this server:__
+
+| Name  | Description |
+| ------------- | ------------- |
+| APP_ID | application id |
+| CLIENT_KEY | application client key |
+| MASTER_KEY | Parse master key |
+| DATABASE_URI | database URI |
 
 ## 3. Project structure
 
-### 3.1 Configuration
+### 3.1 Server
 
-If `server.js` file
+`server.js` - server configuration and runner.
 
 ### 3.2 Cloud functions
 
-In `./cloud/` folder
+In `./cloud/main.js` file. Contains triggers for all project entities.
 
 ## 4. Database entities
+
+This section contains information about custom tables. `User` and `Role` table saved from basic configuration.
 
 ### 4.1 Note
 

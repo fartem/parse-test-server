@@ -13,3 +13,7 @@
 ## 1.2.0
 
 - Removed unused functions and refactored project structure
+
+## 1.3.0
+
+- Updated ACL configuration for User and Note
