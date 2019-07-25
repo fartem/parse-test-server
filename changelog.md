@@ -17,3 +17,7 @@
 ## 1.3.0
 
 - Updated ACL configuration for User and Note
+
+## 1.3.1
+
+- Refactored project structure
