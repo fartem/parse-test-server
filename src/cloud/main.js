@@ -64,7 +64,7 @@ Parse.Cloud.define("invite", async (request) => {
     });
 
     for (var i = 0; i < ownerRoles.length; i++) {
-      ownerRoles[i].getUsers().add(result);
+      ownerRoles[i].getUsers().add(user);
       ownerRoles[i].save(null, {
         useMasterKey: true
       });

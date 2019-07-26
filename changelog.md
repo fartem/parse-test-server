@@ -21,3 +21,7 @@
 ## 1.3.1
 
 - Refactored project structure
+
+## 1.3.2
+
+- Fixed user validation in user invite functionality

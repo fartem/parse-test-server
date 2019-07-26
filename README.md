@@ -45,8 +45,8 @@ This section contains information about custom tables. `User` and `Role` table s
 
 ## 5. Run
 
-From Parse folder in a terminal: `npm start`
+From Parse folder in a terminal: `npm start`.
 
 ## 6. Dependencies
 
-In `package.json`
+In `package.json`.
