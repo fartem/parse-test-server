@@ -25,3 +25,7 @@
 ## 1.3.2
 
 - Fixed user validation in user invite functionality
+
+## 1.3.3
+
+- Adopted for Android app

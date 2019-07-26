@@ -31,5 +31,3 @@ var httpServer = require('http').createServer(app);
 httpServer.listen(port, function () {
   console.log('random-notes-server running on port ' + port + '.');
 });
-
-ParseServer.createLiveQueryServer(httpServer);
