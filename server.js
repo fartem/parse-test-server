@@ -29,5 +29,5 @@ app.use('/dashboard', dashboard);
 var port = 1337;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, function () {
-  console.log('random-notes-server running on port ' + port + '.');
+  console.log('Server running on port ' + port + '.');
 });

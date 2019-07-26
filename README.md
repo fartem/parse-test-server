@@ -1,6 +1,6 @@
 # parse-test-server
 
-Simple realization of Parse server with [mobile client](https://github.com/fartem/parse-android-test-app)
+Simple realization of Parse server with [mobile client](https://github.com/fartem/parse-android-test-app).
 
 ## 1. Install
 
