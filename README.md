@@ -19,11 +19,11 @@ __Values for working with this server:__
 
 ## 3. Project structure
 
-### 3.1 Server
+### 3.1. Server
 
 `server.js` - server configuration and runner.
 
-### 3.2 Cloud functions
+### 3.2. Cloud functions
 
 In `./cloud/main.js` file. Contains triggers for all project entities.
 
@@ -31,7 +31,7 @@ In `./cloud/main.js` file. Contains triggers for all project entities.
 
 This section contains information about custom tables. `User` and `Role` table saved from basic configuration.
 
-### 4.1 Note
+### 4.1. Note
 
 | Column | Type | Description |
 | --- | --- | --- |
@@ -46,7 +46,3 @@ This section contains information about custom tables. `User` and `Role` table s
 ## 5. Run
 
 From Parse folder in a terminal: `npm start`.
-
-## 6. Dependencies
-
-In `package.json`.
