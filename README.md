@@ -1,12 +1,19 @@
-# parse-test-server
+<img src="media/ic_app.png" height="100px" />
+
+![Open issues](https://img.shields.io/github/issues-raw/fartem/parse-test-server.svg?color=ff534a)
+![Last commit](https://img.shields.io/github/last-commit/fartem/parse-test-server.svg?color=51539c)
+![Repo size](https://img.shields.io/github/repo-size/fartem/parse-test-server.svg?color=02778b)
+[![License](https://img.shields.io/github/license/fartem/parse-test-server.svg?color=7ea4b0)](https://github.com/fartem/parse-test-server/blob/master/LICENSE)
+
+## About
 
 Simple realization of Parse server with [mobile client](https://github.com/fartem/parse-android-test-app).
 
-## 1. Install
+## Install
 
 Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse server.
 
-## 2. Parameters
+## Parameters
 
 __Values for working with this server:__
 
@@ -17,21 +24,21 @@ __Values for working with this server:__
 | MASTER_KEY | Parse master key |
 | DATABASE_URI | database URI |
 
-## 3. Project structure
+## Project structure
 
-### 3.1. Server
+### Server
 
-`server.js` - server configuration and runner.
+`server.js` - server runner. Contains server configuration (address, port, etc.).
 
-### 3.2. Cloud functions
+### Cloud functions
 
 In `./cloud/main.js` file. Contains triggers for all project entities.
 
-## 4. Database entities
+## Database entities
 
 This section contains information about custom tables. `User` and `Role` table saved from basic configuration.
 
-### 4.1. Note
+### Note
 
 | Column | Type | Description |
 | --- | --- | --- |
@@ -43,6 +50,6 @@ This section contains information about custom tables. `User` and `Role` table s
 | subtitle | `String` | Note subtitle |
 | note_id | `Number` | Note id in local database |
 
-## 5. Run
+## Run
 
 From Parse folder in a terminal: `npm start`.
