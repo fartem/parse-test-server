@@ -1,9 +1,9 @@
 <img src="media/ic_app.png" height="100px" />
 
-![Open issues](https://img.shields.io/github/issues-raw/fartem/parse-test-server.svg?color=ff534a)
-![Last commit](https://img.shields.io/github/last-commit/fartem/parse-test-server.svg?color=51539c)
-![Repo size](https://img.shields.io/github/repo-size/fartem/parse-test-server.svg?color=02778b)
-[![License](https://img.shields.io/github/license/fartem/parse-test-server.svg?color=7ea4b0)](https://github.com/fartem/parse-test-server/blob/master/LICENSE)
+![Open issues](https://img.shields.io/github/issues-raw/fartem/parse-test-server.svg?color=ff534a&style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/fartem/parse-test-server.svg?color=51539c&style=flat-square)
+![Repo size](https://img.shields.io/github/repo-size/fartem/parse-test-server.svg?color=02778b&style=flat-square)
+[![License](https://img.shields.io/github/license/fartem/parse-test-server.svg?color=7ea4b0&style=flat-square)](https://github.com/fartem/parse-test-server/blob/master/LICENSE)
 
 ## About
 
