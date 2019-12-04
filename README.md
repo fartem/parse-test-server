@@ -15,24 +15,18 @@ Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to 
 
 ## Parameters
 
-__Values for working with this server:__
+In `server.js`:
 
 | Name  | Description |
 | ------------- | ------------- |
-| APP_ID | application id |
-| CLIENT_KEY | application client key |
-| MASTER_KEY | Parse master key |
-| DATABASE_URI | database URI |
-
-## Project structure
-
-### Server
-
-`server.js` - server runner. Contains server configuration (address, port, etc.).
-
-### Cloud functions
-
-In `./cloud/main.js` file. Contains triggers for all project entities.
+| `PORT` | Server port |
+| `ADDRESS` | Server address |
+| `SERVER_URL` | Server URL (combined with ADDRESS and PORT by default) |
+| `APP_ID` | Application Id |
+| `MASTER_KEY` | Master key |
+| `CLIENT_KEY` | Client key |
+| `DATABASE_URL` | Server DB URL |
+| `APP_NAME` | Applicaiton name |
 
 ## Database entities
 
@@ -52,4 +46,7 @@ This section contains information about custom tables. `User` and `Role` table s
 
 ## Run
 
-From Parse folder in a terminal: `npm start`.
+From Parse folder in a terminal:
+```shell
+npm start
+```
