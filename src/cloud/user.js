@@ -1,9 +1,13 @@
-const Cloud = Parse.Cloud
-const User = Parse.User
-const ACL = Parse.ACL
-const Role = Parse.Role
+const schema = require('./schema')
 
-const asRoot = require('../tools/tools').asRoot
+const parse = schema.parse
+
+const ACL = parse.ACL
+const Cloud = parse.CLOUD
+const User = parse.USER
+const Role = parse.ROLE
+
+const asRoot = schema.asRoot
 
 Cloud.beforeSave(User, (request) => {
   const user = request.object

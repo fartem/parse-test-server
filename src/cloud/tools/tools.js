@@ -1,1 +1,0 @@
-const asRoot = { useMasterKey: true }

@@ -1,2 +1,3 @@
-require('./user/user')
-require('./entities/note')
+require('./invite')
+require('./note')
+require('./user')
