@@ -6,6 +6,8 @@ const APP_ID = ''
 const MASTER_KEY = ''
 const CLIENT_KEY = ''
 
+const DATABASE_URL = ''
+
 const APP_NAME = 'Random Notes'
 
 const express = require('express')
@@ -24,7 +26,7 @@ const dashboard = new ParseDashboard({
 })
 
 const api = new ParseServer({
-  databaseURI: 'mongodb://localhost:27017/dev',
+  databaseURI: `mongodb://${DATABASE_URL}/dev`,
   appId: APP_ID,
   masterKey: MASTER_KEY,
   cloud: './src/cloud/main.js',
