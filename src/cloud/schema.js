@@ -11,7 +11,8 @@ const parse = {
 }
 
 const entities = {
-  NOTE: 'note'
+  NOTE: 'note',
+  INVITE: 'invite'
 }
 
 module.exports = {
