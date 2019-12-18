@@ -1,19 +1,23 @@
 <img src="media/ic_app.png" height="100px" />
 
-![Open issues](https://img.shields.io/github/issues-raw/fartem/parse-test-server.svg?color=ff534a&style=flat-square)
-![Last commit](https://img.shields.io/github/last-commit/fartem/parse-test-server.svg?color=51539c&style=flat-square)
-![Repo size](https://img.shields.io/github/repo-size/fartem/parse-test-server.svg?color=02778b&style=flat-square)
-[![License](https://img.shields.io/github/license/fartem/parse-test-server.svg?color=7ea4b0&style=flat-square)](https://github.com/fartem/parse-test-server/blob/master/LICENSE)
+Random Notes Server
+=======================
 
-## About
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-site-brightgreen?style=flat-square)](https://android-arsenal.com/details/3/7906)
+![Open issues](https://img.shields.io/github/issues-raw/fartem/parse-test-server.svg?color=ff534a&style=flat-square)
+
+About
+-------------------
 
 Simple realization of Parse server with [mobile client](https://github.com/fartem/parse-android-test-app).
 
-## Install
+__Install__
+-------------------
 
 Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse server.
 
-## Parameters
+__Configuration__
+-------------------
 
 In `server.js`:
 
@@ -28,11 +32,10 @@ In `server.js`:
 | `DATABASE_URL` | Server DB URL |
 | `APP_NAME` | Applicaiton name |
 
-## Database entities
+Database entities
+-------------------
 
-This section contains information about custom tables. `User` and `Role` table saved from basic configuration.
-
-### Note
+__Note__
 
 | Column | Type | Description |
 | --- | --- | --- |
@@ -44,9 +47,15 @@ This section contains information about custom tables. `User` and `Role` table s
 | subtitle | `String` | Note subtitle |
 | note_id | `Number` | Note id in local database |
 
-## Run
+Run
+-------------------
 
 From Parse folder in a terminal:
 ```shell
 npm start
 ```
+
+Contributors
+-------------------
+
+* [@fartem](https://github.com/fartem) as Artem Fomchenkov
