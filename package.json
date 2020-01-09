@@ -9,7 +9,7 @@
     "express": "~4.11.x",
     "kerberos": "~0.0.x",
     "parse-dashboard": "^2.0.1",
-    "parse-server": "~3.6.0",
+    "parse-server": "~3.9.0",
     "standard": "^14.3.1"
   },
   "scripts": {
