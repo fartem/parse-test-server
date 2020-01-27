@@ -2,6 +2,7 @@ const asRoot = {
   useMasterKey: true
 }
 
+/* eslint no-undef: 0 */
 const parse = {
   ACL: Parse.ACL,
   CLOUD: Parse.Cloud,

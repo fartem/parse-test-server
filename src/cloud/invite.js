@@ -22,11 +22,10 @@ Cloud.define(InviteTableName, async (request) => {
     var rolesQuery = new Query(Role).equalTo('users', request.user)
     var ownerRoles = await rolesQuery.find(asRoot)
 
-    for (var i = 0; i < ownerRoles.length; i++) {
-      ownerRoles[i].getUsers().add(user)
-      ownerRoles[i].save(null, asRoot)
-    }
-
+    ownerRoles.forEach(role => {
+      role.getUsers().add(user)
+      role.save(null, asRoot)
+    })
     return true
   }
 })

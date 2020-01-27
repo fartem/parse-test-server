@@ -19,10 +19,10 @@ Cloud.beforeSave(NoteTableName, async (request) => {
     noteACL.setPublicWriteAccess(false)
 
     const rolesForUser = await roleQuery.find(asRoot)
-    for (var i = 0; i < rolesForUser.length; i++) {
-      noteACL.setRoleReadAccess(rolesForUser[i], true)
-      noteACL.setRoleWriteAccess(rolesForUser[i], true)
-    }
+    rolesForUser.forEach(role => {
+      noteACL.setRoleReadAccess(role, true)
+      noteACL.setRoleWriteAccess(role, true)
+    })
 
     const note = request.object
     note.setACL(noteACL)
