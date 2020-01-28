@@ -7,11 +7,9 @@ const Query = parse.QUERY
 const User = parse.USER
 const Role = parse.ROLE
 
-const InviteTableName = schema.entities.INVITE
-
 const asRoot = schema.asRoot
 
-Cloud.define(InviteTableName, async (request) => {
+Cloud.define('invite', async (request) => {
   var inviteEmail = request.params.email
   var inviteUserQuery = new Query(User).equalTo('email', inviteEmail)
   var user = await inviteUserQuery.first(asRoot)
