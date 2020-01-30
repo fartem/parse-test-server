@@ -9,6 +9,8 @@ const Role = parse.ROLE
 
 const asRoot = schema.asRoot
 
+const emailSender = require('../utils/email')
+
 Cloud.define('invite', async (request) => {
   var inviteEmail = request.params.email
   var inviteUserQuery = new Query(User).equalTo('email', inviteEmail)
@@ -24,6 +26,14 @@ Cloud.define('invite', async (request) => {
       role.getUsers().add(user)
       role.save(null, asRoot)
     })
+
+    const emailData = {
+      from: '"App Random Notes"',
+      to: inviteEmail,
+      subject: 'Invite',
+      text: `Your "Random Notes" account was linked with ${request.user.email}.`
+    }
+    emailSender.sendNoReply(emailData).catch(console.error)
     return true
   }
 })
