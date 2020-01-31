@@ -51,7 +51,7 @@ __Note__
 Nodemailer
 -------------
 
-Configuration file: `/utils/email/email.js`
+Configuration file: `src/utils/email/email.js`
 
 Change empty fields with specific values of your email server.
 
