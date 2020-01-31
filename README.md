@@ -5,6 +5,7 @@ Random Notes Server
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android%20Parse%20Server%20Client-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/7906)
 ![Open issues](https://img.shields.io/github/issues-raw/fartem/parse-test-server.svg?color=ff534a)
+[![Build Status](https://travis-ci.org/fartem/parse-test-server.svg?branch=master)](https://travis-ci.org/fartem/parse-test-server)
 
 About
 -------------

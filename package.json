@@ -4,7 +4,7 @@
   "repository": {
     "github": "https://github.com/fartem/parse-test-server"
   },
-  "license": "Unlicense",
+  "license": "Apache 2.0",
   "dependencies": {
     "express": "~4.11.x",
     "kerberos": "~0.0.x",
