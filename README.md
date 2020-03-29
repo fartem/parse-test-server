@@ -10,12 +10,12 @@ Random Notes Server
 About
 -------------
 
-Simple realization of Parse server with [mobile client](https://github.com/fartem/parse-android-test-app).
+Simple realization of Parse Server with [mobile client](https://github.com/fartem/parse-android-test-app).
 
 __Install__
 -------------
 
-Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse server.
+Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse Server.
 
 __Configuration__
 -------------
