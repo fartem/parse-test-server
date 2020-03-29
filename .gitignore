@@ -17,3 +17,5 @@ jspm_packages/
 package-lock.json
 
 .npm
+
+mongo*

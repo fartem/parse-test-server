@@ -1,14 +1,4 @@
-const PORT = 1337
-const ADDRESS = 'IP_ADDRESS'
-const SERVER_URL = `http://${ADDRESS}:${PORT}/parse`
-
-const APP_ID = ''
-const MASTER_KEY = ''
-const CLIENT_KEY = ''
-
-const DATABASE_URL = ''
-
-const APP_NAME = 'Random Notes'
+require('dotenv').config()
 
 const express = require('express')
 const ParseServer = require('parse-server').ParseServer
@@ -17,21 +7,33 @@ const ParseDashboard = require('parse-dashboard')
 const dashboard = new ParseDashboard({
   apps: [
     {
-      serverURL: SERVER_URL,
-      appId: APP_ID,
-      masterKey: MASTER_KEY,
-      appName: APP_NAME
+      serverURL: process.env.SERVER_URL,
+      appId: process.env.APP_ID,
+      masterKey: process.env.MASTER_KEY,
+      appName: process.env.APP_NAME
+    }
+  ],
+  users: [
+    {
+      user: process.env.ADMIN_USER,
+      pass: process.env.ADMIN_PASSWORD,
+      apps: [
+        {
+          appId: process.env.APP_ID
+        }
+      ]
     }
   ]
-})
+
+}, { allowInsecureHTTP: true })
 
 const api = new ParseServer({
-  databaseURI: `mongodb://${DATABASE_URL}/dev`,
-  appId: APP_ID,
-  masterKey: MASTER_KEY,
+  databaseURI: process.env.DATABASE_URL,
+  appId: process.env.APP_ID,
+  masterKey: process.env.MASTER_KEY,
   cloud: './src/cloud/main.js',
-  serverURL: SERVER_URL,
-  clientKey: CLIENT_KEY
+  serverURL: process.env.SERVER_URL,
+  clientKey: process.env.CLIENT_KEY
 })
 
 const app = express()
@@ -42,6 +44,6 @@ const serverLogo = require('./src/utils/logo')
 console.log(serverLogo('1.0.0', new Date()))
 
 var httpServer = require('http').createServer(app)
-httpServer.listen(PORT, function () {
-  console.log('Server running on port ' + PORT + '.')
+httpServer.listen(process.env.PORT, function () {
+  console.log('Info: Server running on port ' + process.env.PORT + '.')
 })

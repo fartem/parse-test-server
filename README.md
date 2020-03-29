@@ -20,18 +20,23 @@ Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to 
 __Configuration__
 -------------
 
-In `server.js`:
+In `.env`:
 
 | Name  | Description |
 | ------------- | ------------- |
-| `PORT` | Server port |
-| `ADDRESS` | Server address |
 | `SERVER_URL` | Server URL (combined with ADDRESS and PORT by default) |
+| `PORT` | Server port |
 | `APP_ID` | Application Id |
 | `MASTER_KEY` | Master key |
 | `CLIENT_KEY` | Client key |
 | `DATABASE_URL` | Server DB URL |
 | `APP_NAME` | Applicaiton name |
+| `DATABASE_URL` | Database URL |
+| `ADMIN_USER` | Parse Server Dashboard admin name |
+| `ADMIN_PASSWORD` | Parse Server Dashboard admin password |
+| `COMPOSE_PROJECT_NAME` | Docker Compose project name |
+| `SITE_URL` | Docker Compose site URL |
+| `MONGO_INITDB_DATABASE` | Docker Compose MongoDB initial database |
 
 Database entities
 -------------
@@ -46,7 +51,6 @@ __Note__
 | ACL | `ACL` | Default Parse column |
 | title | `String` | Note title |
 | subtitle | `String` | Note subtitle |
-| note_id | `Number` | Note id in local database |
 
 Nodemailer
 -------------
