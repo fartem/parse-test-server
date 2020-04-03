@@ -1,12 +1,12 @@
 const Nodemailer = require('nodemailer')
 
 const noReplyTransporter = Nodemailer.createTransport({
-  host: '',
-  port: 465,
-  secure: true,
+  host: process.env.EMAIL_SEVER_HOST,
+  port: process.env.EMAIL_SEVER_PORT,
+  secure: process.env.EMAIL_SEVER_SECURE === 1,
   auth: {
-    user: '',
-    pass: ''
+    user: process.env.EMAIL_SEVER_USER,
+    pass: process.env.EMAIL_SEVER_PASSWORD
   }
 })
 

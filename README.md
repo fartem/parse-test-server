@@ -12,17 +12,19 @@ About
 
 Simple realization of Parse Server with [mobile client](https://github.com/fartem/parse-android-test-app).
 
-__Install__
+Install
 -------------
 
 Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse Server.
 
-__Configuration__
+Configuration
 -------------
 
-In `.env`:
+Parse Server using variables from the OS environment. By default, all variables loaded from `.env` by `dotenv` in `server.js`.
 
-| Name  | Description |
+__Variables__
+
+| Variable  | Description |
 | ------------- | ------------- |
 | `SERVER_URL` | Server URL (combined with ADDRESS and PORT by default) |
 | `PORT` | Server port |
@@ -55,14 +57,22 @@ __Note__
 Nodemailer
 -------------
 
-Configuration file: `src/utils/email/email.js`
+Email Server using variables from the OS environment. By default, all variables loaded from `.env` by `dotenv` in `server.js`.
 
-Change empty fields with specific values of your email server.
+__Variables__
+
+| Variable  | Description |
+| ------------- | ------------- |
+| `EMAIL_SEVER_HOST` | Email Server host |
+| `EMAIL_SEVER_PORT` | Email Server port |
+| `EMAIL_SEVER_SECURE` | Email Server secure status |
+| `EMAIL_SEVER_USER` | Email Server user |
+| `EMAIL_SEVER_PASSWORD` | Email Server password |
 
 Run
 -------------
 
-From Parse folder in a terminal:
+From root project folder in a terminal:
 ```shell
 npm start
 ```
