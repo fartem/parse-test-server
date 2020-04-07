@@ -3,7 +3,7 @@
 Random Notes Server
 =============
 
-[![Build Status](https://travis-ci.org/fartem/parse-test-server.svg?branch=master)](https://travis-ci.org/fartem/parse-test-server)
+[![Travis CI](https://travis-ci.org/fartem/parse-test-server.svg?branch=master)](https://travis-ci.org/fartem/parse-test-server)
 [![Hits-of-Code](https://hitsofcode.com/github/fartem/parse-test-server)](https://hitsofcode.com/view/github/fartem/parse-test-server)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android%20Parse%20Server%20Client-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/7906)
 
