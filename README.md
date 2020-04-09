@@ -13,11 +13,6 @@ About
 
 Simple realization of Parse Server with [mobile client](https://github.com/fartem/parse-android-test-app).
 
-Install
--------------
-
-Use guide on [this page](https://docs.parseplatform.org/parse-server/guide/) to install and run Parse Server.
-
 Configuration
 -------------
 
