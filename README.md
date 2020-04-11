@@ -11,7 +11,7 @@ Random Notes Server
 About
 -------------
 
-Simple realization of Parse Server with [mobile client](https://github.com/fartem/parse-android-test-app).
+Test realization of Parse Server with [Android client](https://github.com/fartem/parse-android-test-app).
 
 Configuration
 -------------
