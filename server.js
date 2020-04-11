@@ -41,7 +41,7 @@ app.use('/parse', api)
 app.use('/dashboard', dashboard)
 
 const serverLogo = require('./src/utils/logo')
-console.log(serverLogo('1.0.0', new Date()))
+console.log(serverLogo('1.2.0', new Date()))
 
 var httpServer = require('http').createServer(app)
 httpServer.listen(process.env.PORT, function () {
