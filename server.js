@@ -15,9 +15,9 @@ const api = new ParseServer({
   clientKey: process.env.CLIENT_KEY,
   liveQuery: {
     classNames: [
-      'note',
+      'note'
     ]
-  },
+  }
 })
 
 const dashboard = new ParseDashboard({
