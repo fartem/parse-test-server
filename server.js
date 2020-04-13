@@ -4,7 +4,7 @@ const express = require('express')
 const ParseServer = require('parse-server').ParseServer
 const ParseDashboard = require('parse-dashboard')
 const LruCache = require('lru-cache')
-const cache = require('./src/cloud/cache')
+const parseServerCache = require('./src/cloud/cache')
 
 const api = new ParseServer({
   databaseURI: process.env.DATABASE_URL,
@@ -60,9 +60,9 @@ const liveQueryServer = ParseServer.createLiveQueryServer(
   { verbose: false }
 )
 
-const cache = new LruCache({
+const parseServerCache = new LruCache({
   max: 500,
   maxAge: 100
 })
-liveQueryServer.authCache = cache
-cache.set(cache)
+liveQueryServer.authCache = parseServerCache
+cache.set(parseServerCache)
