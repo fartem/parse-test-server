@@ -1,9 +1,9 @@
 const cache = module.exports = {
   lruCache: null,
-  set: function(lruCache) {
+  set: (lruCache) => {
     cache.lruCache = lruCache
   },
-  clear: function() {
+  clear: () => {
     cache.lruCache.reset()
   }
 }

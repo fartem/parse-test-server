@@ -4,7 +4,7 @@ const express = require('express')
 const ParseServer = require('parse-server').ParseServer
 const ParseDashboard = require('parse-dashboard')
 const LruCache = require('lru-cache')
-const parseServerCache = require('./src/cloud/cache')
+const cache = require('./src/cloud/cache')
 
 const api = new ParseServer({
   databaseURI: process.env.DATABASE_URL,
