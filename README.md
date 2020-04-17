@@ -43,12 +43,12 @@ __Note__
 
 | Column | Type | Description |
 | --- | --- | --- |
-| objectId | `String` | Default Parse column |
-| createdAt | `Date` | Default Parse column |
-| updatedAt | `Date` | Default Parse column |
-| ACL | `ACL` | Default Parse column |
-| title | `String` | Note title |
-| subtitle | `String` | Note subtitle |
+| `objectId` | String | Default Parse column |
+| `createdAt` | Date | Default Parse column |
+| `updatedAt` | Date | Default Parse column |
+| `ACL` | ACL | Default Parse column |
+| `title` | String | Note title |
+| `subtitle` | String | Note subtitle |
 
 Nodemailer
 -------------
