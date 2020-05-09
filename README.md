@@ -71,12 +71,12 @@ Run
 Before start Parse Server run MongoDB from Docker:
 
 ```shell
-docker-compose up
+$ docker-compose up
 ```
 
 And then run Parse Server:
 ```shell
-npm start
+$ npm start
 ```
 
 How to contribute
