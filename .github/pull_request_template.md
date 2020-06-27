@@ -24,5 +24,4 @@ Describe all changes here:
 
 ## Comments
 
-Describe all additional inforamation here.
-ß
+Describe all additional information here.
