@@ -11,26 +11,22 @@ const asRoot = schema.asRoot
 
 const checkAuth = require('./auth').checkAuth
 
-const NoteTableName = schema.entities.NOTE
+const Note = schema.entities.NOTE
 
-Cloud.beforeSave(NoteTableName, async (request) => {
+Cloud.beforeSave(Note, async (request) => {
   checkAuth()
 
+  const noteACL = new ACL()
+  noteACL.setPublicReadAccess(false)
+  noteACL.setPublicWriteAccess(false)
+
   const roleQuery = new Query(Role).equalTo('users', request.user)
-  try {
-    const noteACL = new ACL()
-    noteACL.setPublicReadAccess(false)
-    noteACL.setPublicWriteAccess(false)
+  const userRoles = await roleQuery.find(asRoot)
+  userRoles.forEach(role => {
+    noteACL.setRoleReadAccess(role, true)
+    noteACL.setRoleWriteAccess(role, true)
+  })
 
-    const rolesForUser = await roleQuery.find(asRoot)
-    rolesForUser.forEach(role => {
-      noteACL.setRoleReadAccess(role, true)
-      noteACL.setRoleWriteAccess(role, true)
-    })
-
-    const note = request.object
-    note.setACL(noteACL)
-  } catch (e) {
-    console.log(e)
-  }
+  const note = request.object
+  note.setACL(noteACL)
 })

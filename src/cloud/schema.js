@@ -8,7 +8,9 @@ const parse = {
   CLOUD: Parse.Cloud,
   QUERY: Parse.Query,
   USER: Parse.User,
-  ROLE: Parse.Role
+  ROLE: Parse.Role,
+  OBJECT: Parse.Object,
+  SESSION: Parse.Session
 }
 
 const entities = {
