@@ -1,19 +1,16 @@
 <img src="media/logo/ic_app.png" height="100px" />
 
-Random Notes Server
-=============
+# Random Notes Server
 
 [![Travis CI](https://travis-ci.org/fartem/parse-test-server.svg?branch=master)](https://travis-ci.org/fartem/parse-test-server)
 [![Codebeat](https://codebeat.co/badges/67b13aeb-4d1e-4fe2-b1ec-07d746983205)](https://codebeat.co/projects/github-com-fartem-parse-test-server-master)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android%20Parse%20Server%20Client-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/7906)
 
-About
--------------
+## About
 
 Test realization of Parse Server with [Android client](https://github.com/fartem/parse-android-test-app).
 
-Configuration
--------------
+## Configuration
 
 Parse Server using variables from the OS environment. By default, all variables loaded from `.env` by `dotenv` in `server.js`.
 
@@ -35,8 +32,7 @@ __Variables__
 | `SITE_URL` | Docker Compose site URL |
 | `MONGO_INITDB_DATABASE` | Docker Compose MongoDB initial database |
 
-Database entities
--------------
+## Database entities
 
 __Note__
 
@@ -49,8 +45,7 @@ __Note__
 | `title` | String | Note title |
 | `subtitle` | String | Note subtitle |
 
-Nodemailer
--------------
+## Nodemailer
 
 Email Server using variables from the OS environment. By default, all variables loaded from `.env` by `dotenv` in `server.js`.
 
@@ -64,8 +59,7 @@ __Variables__
 | `EMAIL_SEVER_USER` | Email Server user |
 | `EMAIL_SEVER_PASSWORD` | Email Server password |
 
-Run
--------------
+## Run
 
 Before start Parse Server run MongoDB from Docker:
 
@@ -78,8 +72,7 @@ And then run Parse Server:
 $ npm start
 ```
 
-How to contribute
--------------
+## How to contribute
 
 Read [Commit Convention](https://github.com/fartem/repository-rules/blob/master/commit-convention/COMMIT_CONVENTION.md). Make sure your build is green before you contribute your pull request. Then:
 
@@ -89,7 +82,6 @@ $ npm test
 
 If you don't see any error messages, submit your pull request.
 
-Contributors
--------------
+## Contributors
 
 * [@fartem](https://github.com/fartem) as Artem Fomchenkov
