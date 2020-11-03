@@ -8,7 +8,7 @@
 
 ## About
 
-Test server on [Parse platform](https://parseplatform.org/) with [Android client](https://github.com/fartem/parse-android-test-app).
+Demo server on [Parse platform](https://parseplatform.org/) with [Android client](https://github.com/fartem/parse-android-test-app).
 
 ## Configuration
 
