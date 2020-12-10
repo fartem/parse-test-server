@@ -2,7 +2,7 @@
 
 # Random Notes Server
 
-[![GitHubActions](https://github.com/fartem/parse-test-server/workflows/Dart/badge.svg)](https://github.com/fartem/parse-test-server/actions?query=workflow%3ABuild)
+[![GitHubActions](https://github.com/fartem/parse-test-server/workflows/Build/badge.svg)](https://github.com/fartem/parse-test-server/actions?query=workflow%3ABuild)
 [![Codebeat](https://codebeat.co/badges/67b13aeb-4d1e-4fe2-b1ec-07d746983205)](https://codebeat.co/projects/github-com-fartem-parse-test-server-master)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android%20Parse%20Server%20Client-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/7906)
 
