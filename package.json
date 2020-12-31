@@ -1,6 +1,6 @@
 {
   "name": "random-notes-server",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "repository": {
     "github": "https://github.com/fartem/parse-test-server"
   },
@@ -11,7 +11,7 @@
     "kerberos": "~0.0.x",
     "nodemailer": "^6.4.2",
     "parse-dashboard": "^2.0.1",
-    "parse-server": "~4.3.0",
+    "parse-server": ">=4.5.0",
     "standard": "^14.3.1"
   },
   "scripts": {
